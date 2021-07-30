@@ -1,0 +1,985 @@
+/*
+Theme Name: chopitheme
+Description: Theme diseñado y desarrollado exclusivamente para el sitio inmobiliario Chopitea Estates
+Version: 1.0
+Author: Fernando Bayley para La Agencia Salvaje WWA
+License: GPLv2 or later
+*/
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.preHeader {
+    font-family: 'Alata', sans-serif;
+    font-size: 13px;
+    padding: 10px 0 10px 0;
+}
+.preHeader a {
+    color: grey;
+}
+.preHeader a:hover {
+    color: #000;
+}
+.header {
+    font-family: 'Alata', sans-serif;
+    background-color: #0C1029;
+}
+.header img {
+    height: auto;
+    width: 70%;
+}
+.heroSection {
+    height: auto;
+    background: url('http://chopiteaestates.com/wordpress/wp-content/themes/chopitheme/assets/images/hero.png') no-repeat center
+    center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 250px 0 250px 0;
+    text-align: center;
+    border-bottom: solid 7px #0C1029;
+}
+.heroSection h3 {
+    color: #0C1029;
+    font-family: 'Alata', sans-serif;
+    font-size: 35px;
+}
+.destacado {
+    text-align: center;
+    padding: 50px 0 35px 0;
+}
+.destacado h2 {
+    font-family: 'Alata', sans-serif;
+    color: #0C1029;
+}
+.destacado p {
+    color: #767575;
+    font-family: 'Alata', sans-serif;
+    border-bottom: solid 1px grey;
+    padding-bottom: 20px;
+}
+.galeriaDestacada {
+    height: auto;
+    text-align: center;
+}
+.galeriaDestacada img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.galeriaDestacada h2 {
+    color: #0C1029;
+    font-family: 'Alata', sans-serif;
+    text-align: left;
+    font-size: 25px;
+}
+.galeriaDestacada p {
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Alata', sans-serif;
+    color: #767575;
+}
+.slick-slide {
+    height: 550px;
+}
+.slick-slide img {
+    object-fit: contain;
+    margin: 0 auto;
+    height: 550px;
+    min-height: 550px;
+    max-height: 550px;
+}
+.slick-arrows {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+}
+.slick-arrows ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.slick-arrows ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block !important;
+    cursor: pointer;
+}
+.slick-arrows ul li:hover img {
+    border: solid 1px black;
+    background-color: rgba(255,255,255,0.5);
+}
+.slick-arrows ul li:last-child {
+    float: right;
+}
+.slick-arrows ul li img {
+    width: 50px;
+}
+.carousel-container {
+    position: relative;
+    height: 550px;
+    margin-bottom: 5px;
+}
+#propertyMap {
+    margin-bottom: 5px;
+}
+#map {
+    height: 550px;
+}
+.descripcion {
+    height: auto;
+    text-align: center;
+    padding: 50px 0 40px 0;
+}
+.descripcion h2 {
+    font-family: 'Alata', sans-serif;
+    color: #0C1029;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.descripcion p {
+    text-align: justify;
+    font-size: 14px;
+    color: #767575;
+    line-height: 27px;
+}
+.preFooter {
+    height: auto;
+    background: url(../../assets/images/prefooter-hero.png) no-repeat center
+    center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0 150px 0;
+    text-align: center;
+}
+.footer {
+    height: auto;
+    background-color: #0C1029;
+    color: #FFF;
+    padding: 50px 0 10px 0;
+}
+.footer h3 {
+    font-size: 18px;   
+}
+.footer img {
+    margin-bottom: 40px;
+}
+.footer p {
+    font-size: 11px;
+}
+.navbar {
+    background-color: #0C1029!important;
+    padding: 10px 10px 10px 10px;
+}
+.menuList a {
+    color: #FFF!important;
+    font-size: 13px;
+    font-weight: 100;
+    padding: 10px 10px 10px 10px;
+}
+.menuList a:hover {
+    color: #FFF!important;
+    font-size: 13px;
+    font-weight: 100;
+    background-color: #192258;
+    border-radius: 5px;
+    -webkit-transition: all 5ms ease;
+    -moz-transition: all 5ms ease;
+    -ms-transition: all 5ms ease;
+    -o-transition: all 5ms ease;
+    transition: all 5ms ease;
+    padding: 10px 10px 10px 10px;
+}
+.legales {
+    background-color: #0C1029;
+    padding-top: 40px;
+}
+.legales p {
+    color: #FFF;
+    font-size: 13px;
+    font-family: 'Alata', sans-serif;
+}
+.link {
+    margin-top: 120px;
+}
+.subHeader {
+    background-color: #D8D8D8;
+    height: auto;
+    margin: 0;
+    padding: 15px 0 0 0;
+    font-size: 15px;
+    color: #000;
+    font-family: 'Alata', sans-serif;
+}
+.galerias {
+    height: auto;
+}
+.galeria {
+    height: auto;
+}
+.galerias {
+    height: auto;
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+.galerias h2 {
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.galerias p {
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    color: grey;
+}
+.galerias h3 {
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+}
+.galeria {
+    height: auto;
+}
+.galeria img {
+    height: auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.iconos {
+    height: auto;
+    width: 10%;
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.iconos img {
+    padding: 10px;
+}
+.galerias ul {
+    margin: 0;
+    padding: 0;
+}
+.galerias li {
+    list-style: none;
+    display: inline-block;
+}
+.galeriaDeResultados {
+    height: auto;
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+.galeriaDeResultados h2 {
+    font-size: 19px;
+    font-family: 'Alata', sans-serif;
+    color: #000;
+    margin-top: 10px;
+    text-align: left;
+}
+.galeriaDeResultados p {
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    color: grey;
+}
+.galeriaDeResultados h3 {
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+}
+.galResultados img {
+    height: auto;
+    width: 100%;
+}
+.barraPrecio {
+    height: auto;
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+.infoPrecios {
+    background-color: #F5F5F5;
+    height: auto;
+}
+.colImagen img {
+    height: auto;
+    /*margin-bottom: 5px;*/
+    /*width: 100%;*/
+}
+.ficha {
+    margin: 10px 0 50px 0;
+}
+.colFormulario {
+    background-color: #0C1029;
+    height: 100%;
+    margin-top: 40px;
+}
+.colFormulario h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.colFormulario h3 {
+    font-size: 16px;
+    margin-top: 50px;
+}
+.formulario {
+    padding: 100px 30px 100px 30px;
+    text-align: left;
+    height: auto;
+}
+.colFormulario {
+    color: #FFF;
+}
+.colFormulario input {
+    height: 55px;
+    border-radius: 0;
+    margin-bottom: 25px;
+}
+.botonesBajoImagen {
+    background-color: #0C1029;
+    color: #FFF;
+    border: none;
+    padding: 5px 15px 5px 14px;
+    margin-bottom: 30px;
+}
+.botonesBajoImagen:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+.botonesArribaImagen {
+    background-color: #0C1029;
+    color: #FFF;
+    border: none;
+    padding: 5px 15px 5px 14px;
+    margin-bottom: 5px;
+}
+.cuadroDescripcion {
+    height: auto;
+    background-color: #F5F5F5;
+    padding: 20px;
+}
+.cuadroDescripcion h2 {
+    font-size: 18px;
+    font-family: 'Alata', sans-serif;
+}
+.cuadroDescripcion p,
+.cuadroDescripcion ul {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.heroSection form input {
+    height: 60px;
+    display: inline-block;
+    width: 60%;
+    border: solid 1px black;
+}
+.btnBusqueda {
+    background-color: #0C1029;
+    border: solid 1px black;
+    height: 60px;
+    width: 20%;
+}
+.btnBusqueda:hover {
+    background-color: #202753;
+}
+.iconografia  {
+    text-align: left;
+}
+.iconografia ul {
+    padding: 0;
+    text-align: center;
+}
+.iconografia img {
+    height: auto;
+    width: 60%;
+}
+.contacto {
+    text-align: center;
+    height: auto;
+    margin-top: 0;
+}
+.imagenContacto {
+    margin: 0;
+    padding: 0;
+}
+.imagenContacto img {
+    height: auto;
+    width: 100%;
+}
+.btnBlog {
+    border: 0;
+    margin-bottom: 50px;
+    height: 35px;
+    width: 40%;
+    float: left;
+    background-color: #0C1029;
+    color: #FFF;
+    font-size: 15px;
+}
+.btnBlog a {
+    color: #FFF;
+}
+.btnVerMas {
+    background-color: #0C1029;
+    width: 100%;
+    border: solid 2px #0C1029;
+    color: #FFF;
+    height: 35px;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+.btnVerMas:hover {
+    background-color: transparent;
+    border: solid 2px #0C1029;
+    color: #0C1029;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+.precio {
+    font-size: 18px;
+}
+.iconografia {
+    margin: 0;
+    padding: 0;
+}
+.galeriaDestacada .iconografia ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.galeriaDestacada .iconografia ul li  img {
+    margin: 0;
+    padding: 0;
+}
+.infoPrecios h4 {
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    color: grey;
+    padding-top: 20px;
+}
+.infoPrecios h2 {
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Alata', sans-serif;
+}
+.btnEnviar {
+    background-color: #53A94A;
+    border: 0;
+    height: 45px;
+    color: #FFF;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+}
+.btnWhastApp {
+    background-color: #53A94A;
+    border: 0;
+    height: 45px;
+    color: #FFF;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+}
+.iconoDescripcion {
+    display: inline-block;
+    margin-top: 15px;
+}
+.precioFicha {
+    margin-top: 30px;
+}
+.iconosBusqueda {
+    display: inline-block;
+}
+.iconosBusqueda img {
+    height: auto;
+    width: 80%;
+}
+.formularioFoter {
+    background-color: #0C1029;
+    color: #FFF;
+    padding: 60px 20px 60px 20px;
+    text-align: left;
+    height: auto;
+}
+.formularioFoter h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+}
+.formularioFoter input {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 20px;
+    height: 50px;
+}
+.formularioFoter textarea {
+    border-radius: 0;
+    height: 170px;
+}
+
+
+.formularioFoter input {
+    padding: 10px;
+}
+.formularioFoter textarea {
+    padding: 10px;
+}
+.formularioFoter  .wpforms-submit {
+    background-color: #53A94A;
+}
+
+
+
+.btnEnviarFormFooter {
+    border: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #53A94A;
+    color: #FFF;
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+}
+.contacto h2 {
+    padding: 40px 0 0 0;
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    color: #0C1029;
+    font-size: 22px;
+}
+.contacto article p {
+    font-family: 'Alata', sans-serif;
+    text-align: left;
+    color: grey;
+}
+.separata {
+    margin-bottom: 100px;
+}
+.imgQuienesSomos img {
+    height: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 100%;
+}
+.imgQuienesSomos h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+.imgQuienesSomos p {
+    text-align: left;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    color: grey;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+nav ul li a {
+    text-decoration: none!important;
+}
+.galeria img {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+}
+.separador {
+    margin-bottom: 70px;
+}
+.plantillaStandar {
+    height: auto;
+    padding: 40px 0 40px 0;
+}
+.plantillaStandar h2 {
+    font-family: 'Alata', sans-serif;
+}
+.titulo {
+    font-family: 'Alata', sans-serif;
+    font-size: 100px;
+}
+.titulo h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+}
+.encabezado {
+    background-color: #F5F5F5;
+    height: auto;
+    padding: 30px 0 20px 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.encabezado h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.contenedorPrincipal {
+    height: auto;
+    padding-bottom: 100px;
+}
+.imgSingle img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.rib {
+    background-color: #0C1029;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 40%;
+}
+input {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 50px;
+    border: 0;
+    border-bottom: solid 1px black;
+}
+textarea {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 50px;
+    border: 0;
+    border-bottom: solid 1px black;
+}
+.wpforms-submit  {
+    width: 30%;
+    border: 0;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #0C1029;
+    color: white;
+    font-size: 20px;
+    float: left;
+}
+
+
+.desarrollos {
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.desarrollos img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.desarrollos h2 {
+    color: #0C1029;
+    font-family: 'Alata', sans-serif;
+    text-align: left;
+    font-size: 25px;
+}
+.desarrollos p {
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Alata', sans-serif;
+    color: #767575;
+}
+
+
+.exclusividades {
+    height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.exclusividades img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.exclusividades h2 {
+    color: #0C1029;
+    font-family: 'Alata', sans-serif;
+    text-align: left;
+    font-size: 25px;
+}
+.exclusividades p {
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Alata', sans-serif;
+    color: #767575;
+}
+
+.btnVerMasBlog {
+    background-color: #0C1029;
+    width: 40%;
+    border: solid 2px #0C1029;
+    color: #FFF;
+    height: 35px;
+    float: left;
+    margin-bottom: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+.btnVerMasBlog:hover {
+    background-color: transparent;
+    border: solid 2px #0C1029;
+    color: #0C1029;
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
+}
+.contactoFicha {
+    background-color: #0C1029;
+    height: 850px;
+    border-radius: 10px;
+    margin: 0;
+}
+.contactoFicha h2 {
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.contactoFicha p {
+    color: white;
+    font-family: 'Alata', sans-serif;
+    font-weight: 100;
+    margin-top: -50px;
+}
+
+.infoFicha {
+    border-bottom: solid 1px grey;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: 'Alata', sans-serif;
+}
+.infoFicha h2 {
+    color: brown;
+}
+.contenedorPrincipal p {
+    margin-bottom: 60px;
+}
+.contactoFicha .wpforms-submit {
+    background-color: #53A94A;
+    font-family: 'Alata', sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+.contactoFicha input {
+    margin: 0;
+    padding: 10px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+.contactoFicha textarea {
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 25px;
+    height: 100px;
+}
+
+.descripcion {
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-top: -30px;
+}
+
+
+
+
+
+/*
+
+   _____             .___.__        
+  /     \   ____   __| _/|__|____   
+ /  \ /  \_/ __ \ / __ | |  \__  \  
+/    Y    \  ___// /_/ | |  |/ __ \_
+\____|__  /\___  >____ | |__(____  /
+        \/     \/     \/         \/ 
+                           .__               
+  ________ __   ___________|__| ____   ______
+ / ____/  |  \_/ __ \_  __ \  |/ __ \ /  ___/
+< <_|  |  |  /\  ___/|  | \/  \  ___/ \___ \ 
+ \__   |____/  \___  >__|  |__|\___  >____  >
+    |__|           \/              \/     \/ 
+
+
+*/
+
+@media (min-width: 320px) {
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+    .header img {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+    .cabezal {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+        width: 60%;
+    }
+    .navbar-toggler-icon {
+        color: #FFF!important;
+    }
+    .btnBusqueda {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .heroSection form input {
+        width: 100%;
+    }
+    .burger {
+        color: #FFF;
+        border: 0;
+        font-size: 25px;
+    }
+    .heroSection {
+        height: auto;
+        background: url(../../assets/images/hero.png) no-repeat left;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 250px 0 250px 0;
+        text-align: center;
+        border-bottom: solid 7px #0C1029;
+    }
+}
+
+@media (min-width: 375px) {}
+
+@media (min-width: 360px) {}
+
+@media (min-width: 768px) {
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+    .header img {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 40%;
+    }
+}
+
+@media (min-width: 414px) {}
+
+@media (min-width: 425px) {}
+
+@media (min-width: 1024px) {
+    .btnBusqueda {
+        margin-top: -3px;
+        width: 15%;
+    }
+    .heroSection form input {
+        width: 70%;
+    }
+    .heroSection {
+        height: auto;
+        background: url('http://chopiteaestates.com/wordpress/wp-content/themes/chopitheme/assets/images/hero.png') no-repeat center
+        center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 250px 0 250px 0;
+        text-align: center;
+        border-bottom: solid 7px #0C1029;
+    }
+    .preFooter {
+        height: auto;
+        background: url('http://chopiteaestates.com/wordpress/wp-content/themes/chopitheme/assets/images/prefooter-hero.png') no-repeat center
+        center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 150px 0 150px 0;
+        text-align: center;
+    }
+    .header img {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+    .navbar-brand {
+        width: auto;
+    }
+    .galeriaDestacada {
+        margin-bottom: 35px;
+    }
+}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 2560px) {}
