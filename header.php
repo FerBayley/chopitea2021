@@ -4,8 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="" />
-    <meta name="keywords" content=""/>
+    <meta name="description" content="En el año 1980 surgió la empresa familiar radicada en Punta del Este, dedicándose al rubro de bienes raíces. Poco a poco fuimos siendo 
+    reconocidos en el mercado. Hoy después de 41 años seguimos creciendo, fusionamos la actividad inmobiliaria con la actividad notarial y legal, brindando así un acompañamiento 
+    completo al cliente. Con experiencia comprobable, confianza, eficiencia y tranquilidad de que al final hiciste un buen negocio." />
+    <meta name="keywords" content="Punta del este, uruguay, Montevideo, inmobiliaria, inmobiliaria punta del este, Chopitea Estates, compra, venta, alquiler, arrendamiento, 
+    vivienda, hogar, vacaciones, turismo, playa mansa, playa brava, la barra, José Ignacio, mar, isla gorriti, confianza, seguridad, amabilidad, Tower, edificio, casa, 
+    prefabricado, amanecer, atardecer, diseño, arquitectura, diseño de interiores, balneario, lujo, paz, península, país natural, naturaleza, playa, charcas, campo, cabaña, 
+    real Estates, compraventa, inversión, tierra, ubicación, location, broker, propiety, manantiales, reforma, felicidad, confortable, puerto de punta del este"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">

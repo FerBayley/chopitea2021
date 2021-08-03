@@ -44,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-             <div class="rib">VENTAS</div>
+             <!-- <div class="rib">VENTAS</div> -->
              <?php query_posts('category_name=destacadas-ventas&showposts=1'); ?>
              <?php while (have_posts()) : the_post(); ?>
              <?php if ( has_post_thumbnail() ) {
@@ -57,7 +57,7 @@
           </div>
 
           <div class="col-3">
-             <div class="rib">ALQUILERES</div>
+             <!-- <div class="rib">ALQUILERES</div> -->
              <?php query_posts('category_name=destacadas-alquileres&showposts=1'); ?>
              <?php while (have_posts()) : the_post(); ?>
              <?php if ( has_post_thumbnail() ) {
@@ -70,7 +70,7 @@
           </div>
 
           <div class="col-3">
-             <div class="rib">DESARROLLO</div>
+             <!-- <div class="rib">DESARROLLO</div> -->
              <?php query_posts('category_name=destacadas-desarrollos&showposts=1'); ?>
              <?php while (have_posts()) : the_post(); ?>
              <?php if ( has_post_thumbnail() ) {
@@ -83,7 +83,7 @@
           </div>
 
           <div class="col-3">
-             <div class="rib">EXCLUSIVIDADES</div>
+             <!-- <div class="rib">EXCLUSIVIDADES</div> -->
              <?php query_posts('category_name=destacadas-exclusividades&showposts=1'); ?>
              <?php while (have_posts()) : the_post(); ?>
              <?php if ( has_post_thumbnail() ) {
